@@ -61,9 +61,11 @@ public class Campo {
 		if (vizinhacaSegura()) {
 			vizinhos.forEach(v -> v.abrir());
 		}
-		return true;
+		
+		 return true;
+	 } else {
+		return false;
 	 }
-		  return false;
 	}
 	
 	boolean vizinhacaSegura () {
@@ -76,6 +78,15 @@ public class Campo {
 	
 	public boolean isMarcado () {
 		return marcado;
+	}
+	
+	
+	 void setAberto(boolean aberto) {
+		this.aberto = aberto;
+	}
+
+	public boolean isMinado () {
+		return minado;
 	}
 	
 	public boolean isAberto() {
@@ -94,7 +105,7 @@ public class Campo {
 		return coluna;
 	}
 	
-	boolean objetivoAlcançado() {
+	boolean objetivoAlcancado() {
 		boolean desvendado = !minado && aberto;
 		boolean protegido = minado && marcado;
 		return desvendado || protegido;
