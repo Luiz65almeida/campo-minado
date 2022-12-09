@@ -13,7 +13,7 @@ class CampoTeste {
 	
 	@BeforeEach
 	void iniciarCampo() {
-		campo = new Campo (3, 3);
+		campo = new Campo (3, 3) ;
 	}
 	
 	
