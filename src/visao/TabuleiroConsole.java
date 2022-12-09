@@ -38,7 +38,7 @@ public class TabuleiroConsole {
 				}
 			}
 		} catch (SairException e) {
-			System.out.println("Tchau!!!");
+			System.out.println("Tchau!!!") ;
 		} finally {
 			sc.close();
 		}

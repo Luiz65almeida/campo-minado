@@ -43,7 +43,7 @@ public class Tabuleiro {
 			campos.parallelStream()
 			.filter(c -> c.getLinha() == linha && c.getColuna() == coluna )
 			.findFirst()
-			.ifPresent(c -> c.alterarMarcacao());
+			.ifPresent(c -> c.alterarMarcacao()) ;
 		}
 	
 		private void gerarCampos() {

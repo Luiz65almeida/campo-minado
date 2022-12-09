@@ -77,7 +77,7 @@ public class Campo {
 	}
 	
 	public boolean isMarcado () {
-		return marcado;
+		return marcado ;
 	}
 	
 	
